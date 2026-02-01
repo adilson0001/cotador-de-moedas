@@ -1,25 +1,43 @@
-<!-- centralizador -->
-<div class="flex justify-center items-center w-screen h-screen bg-[#16191b] text-white  font-inter">
+<!-- centralizador externo-->
+<div class="flex justify-center items-center w-screen h-screen bg-[#16191b] text-white  font-inter min-w-157.5">
   <!-- div interna -->
   <div>
     <!-- Cotação de Moedas -->
     <div>
-      <h1 class="text-[22px]">Cotação de Moedas</h1>
+      <h1 class="text-[30px] mb-1">Cotação de Moedas</h1>
     </div>
 
     <!-- linha de pesquisa -->
     <div>
       <!-- campo de seleção -->
-      <div>
-        <select name="" id="" class="mr-5 px-15 py-2 rounded cursor-pointer bg-[#343A40]" >
-          <option value="" class="bg-yellow-500">SELECIONAR</option>
-          <option value="" class="bg-amber-700">EUA</option>
-          <option value="" class="bg-green-700">Brasil</option>
+      <div class="flex">
+        <select name="" id="" class="mr-2 text-[20px] px-15 py-2 rounded cursor-pointer bg-[#343A40]">
+          <option value=""class="bg-[#6a6666]">SELECIONAR</option>
+          <option value=""class="bg-[#6a6666]">USD - Dólar Americano</option>
+          <option value=""class="bg-[#6a6666]">EUR - Euro</option>
+          <option value=""class="bg-[#6a6666]">AUD - Dólar Australiano</option>
+          
         </select>
-        <button class="cursor-pointer bg-[#5D8ACD] px-3 py-1 rounded">Buscar</button>
+
+        <button class="cursor-pointer bg-[#1e5cb8] px-3 py-2 rounded text-[18px]">Converter</button>
       </div>
 
-      
+      <!-- conjunto externo da API -->
+      <div class="w-full bg-[#343A40] mt-2 flex flex-col items-center rounded text-[27px] p-6">
+
+        <!-- nome dos paises -->
+        <div class="mb-3">
+          <p><span>👌</span> USD / BRL</p>
+        </div>
+        
+        <!-- resultado da API -->
+        <div class="">
+          <p><span>1 </span> <span>Dolar</span> = <span>5.45 </span><span>Reais</span></p>
+        </div>
+      </div>
+
+      <!-- texto avisando se foi atualizado (só utilizar após atuaslizar) -->
+      <p class="text-center text-[16px] text-[#cbcbcb] mt-2">Atualizado há poucos segundos</p>
     </div>
   </div>
 </div>
